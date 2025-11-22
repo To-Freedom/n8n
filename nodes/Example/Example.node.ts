@@ -6,26 +6,26 @@ import type {
 } from 'n8n-workflow';
 import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
 
-export class Example implements INodeType {
+export class n8n implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Example',
-		name: 'example',
-		icon: { light: 'file:example.svg', dark: 'file:example.dark.svg' },
+		displayName: 'n8n',
+		name: 'n8n',
+		icon: { light: 'file:n8n.svg', dark: 'file:n8n.dark.svg' },
 		group: ['input'],
 		version: 1,
-		description: 'Basic Example Node',
+		description: 'Basic n8n Node',
 		defaults: {
-			name: 'Example',
+			name: 'n8n',
 		},
-		inputs: [NodeConnectionTypes.Main],
-		outputs: [NodeConnectionTypes.Main],
+		inputs: [n8n.Main],
+		outputs: [n8n.Main],
 		usableAsTool: true,
 		properties: [
 			// Node properties which the user gets displayed and
 			// can change on the node.
 			{
-				displayName: 'My String',
-				name: 'myString',
+				displayName: 'Leo N8N',
+				name: 'leo',
 				type: 'string',
 				default: '',
 				placeholder: 'Placeholder value',
